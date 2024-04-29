@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pralee Tech and Games</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <nav class="px-2 sm:px-6 py-2 backdrop-blur-3xl bg-opacity-70 bg-gray-800 w-auto z-20 left-0 relative top-2">
+        <div class="container flex flex-wrap items-center justify-between mx-auto w-full">
+            <span class="w-10"></span>
+            <h1 class="sr-only">Pralee Technology</h1>
+            <a href="https://praleetechnology.com/" class="flex items-center">
+                <img src="praleelogo.e23e100b2f5b964a2809.png" class="h-11" alt="pralee logo">
+            </a>
+            <button id="toggleSidebar" type="button" class="inline-flex items-center p-2 text-sm rounded-lg text-gray-400 hover:bg-gray-700" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z"></path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div class="flex justify-end absolute w-max right-0 z-10 mt-2 transition-all duration-300 ease-in-out">
+        <aside id="sidebar" class="sidebar w-80 h-screen bg-gray-800 backdrop-blur-2xl" aria-label="Sidebar">
+            <div class="overflow-y-auto py-4 px-3">
+                <ul class="space-y-2">
+                    <li>
+                        <a class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700" href="home.html">
+                            <span class="ml-3">Home</span>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700" href="about us.html">
+                            <span class="flex-1 ml-3 whitespace-nowrap">About Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700" href="/services">
+                            <span class="flex-1 ml-3 whitespace-nowrap">Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700" href="/gaming">
+                            <span class="flex-1 ml-3 whitespace-nowrap">Gaming</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700" href="/contactus">
+                            <span class="flex-1 ml-3 whitespace-nowrap">Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <div>
+        <div class="h-72 flex w-full" style="background-image: url(&quot;/static/media/bgpic.c02d1c758caa4989c54c.jpg&quot;); background-position: center center; background-size: 100%;">
+            <div class="px-10 md:px-24 flex items-center md:justify-start justify-center w-full bg-gray-900 bg-opacity-80">
+                <h1 class=" text-white text-2xl md:text-4xl mt-6 text-center md:text-left">We believe that<br>Technology should be accessible and enjoyable for everyone</h1>
+            </div>
+        </div>
+        <div class="mx-10 md:mx-24">
+            <h1 class="text-white text-4xl md:text-6xl text-center md:text-right pt-14 font-extrabold">Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-600 to-pink-400">Values</span>
+            </h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-20">
+                <div class="flex flex-col flex-auto justify-start items-center w-full h-auto py-20 px-10 bg-gray-800 rounded-2xl shadow-sm transition-all duration-500 hover:shadow-sky-400 shadow-purple-700 ">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAtFBMVEVHcEz39/f39/f5+fn29vb19fX////39/f29vb29vb39/f4+Pj29vb09PT4+Pj29vb39/fv7+/29vb39/f19fX39/f29vb39/f19fX39/f39/f4+Pj29vb4+Pj29vb29vYBAQH39/c/Pz8gICB8fHybm5sRERHZ2dltbW26uroQEBDJycno6OjY2NhOTk5eXl6MjIwwMDCLi4tdXV0vLy+qqqqrq6vn5+dsbGxPT0/KysrIyMj/p6vqAAAAIHRSTlMAYEAwkHAQIN/v77+/MJ/PoBCfz6CQsK9QgI9wj2/Qf9MYSmsAAASjSURBVHhevZpZd+I4EIUNwdgOZOtMtunpntLudWFL0j3//38NThFsc7AQjtX3weckD3y5dUslCccx1fTZnTzd+wHZKvDn84k7njpDynOvfXJE/tPoYhjCeOITjfxv468Spv/ekJPyR94XEFeTgJjpW1+MN0eARcz0bwTYxPzoKJQ+G4uVqjX37NpAXbqW0mjrH7NS/SRfku8ZMHxCbFOuAvJlXV7YZyBFz7BN8ZAxBMUzydxa+j4ZUPfH903NGhxsVf4gA8vVhW4x/DkZXPNDxohYkGuve2tdtjvsL2OAyKno12GeMYMDW0BhTPH6GFGwIiSEqEf2JkaSjdo+o+rzMzAv2MUZRlIKAOEWBZwQYe6ETM4wEgJPeGWAQr6SrEeDGayRRb57pGEs39+IuV7Mpy+rIJQSfH4o4qUygNwgY2zUucssBNGAFADAEgPKuI7dJPiC1BABnGSMGkfvG67CDWlAwnj7KCE9DfErxgUxkoCsDUmrkpmu+lEvSAZMcFiZzuJHU0ihGhDyygBCo16+PuP4wGPgOwgKfzQK5Y6YKlsBi3pAyBRXiaEEg0KdD3l2XHKOODCJkIhCabwLT3QAxTDtVs0qSBoC2+xXarhW+uU400HWEpg4nJVbiJCNzooYxGvdqnzUQkLYZAwOzFD6mwJNahuwTgSE2hnp65YGxxhECxKDXO6RGwmcnNiRfSfohjDcnA7M5I1Kpb92nlLdrLx0dEZE3VOc8zJBZvQRtghzmkv49BTprGgglBGUKiRUquumuAS5oIvGr2LaB6I+/8oS5Hv0RkgiKGKiAuTqw8+bYJCrndu0B0TAf7ta5XW3UmAlBcnrybgEllaQRHNO6g4+jHcM3l7yiKiVAGYeh93B+52RLPZHxlqVE0TUWqIHtupu4ZsuCA7CnGVNd7Ds7BBKu8+qj1qIahULbbWF7auHdA/IFcP0W4FkxyAphNpyTbpHfQkppo/SlZ3lFWnZPeqfuyARCLSzFx60U8E3R+Iru5f8uHv7TRnwNoQtcLADMHUI4bDWbL+aMRxCXsQHsywEFpHXuE2Ji18Qak93t7rNFiBqdqqiOIKTFiUBgKVuz3K0m3zCIGxkJKQUCGxRispdt0anrkAZixVBFXEINMO4WhQF6+zkjc7XUdL99h3va/IabxoUxVh28sCtP6+QV8iRIvLoE7wAsaUgXjGZ6E+pJpegZavim82eEsE6SbmUkcklqHNG1kce3tjhBVKWVTsDYEzaaqFedIh6+KoETewo6zWwskQb2t5C3QWnKMXHiKlNRHkqaM7fDK9Ap6PHqOOkYQKg2VAGsZvd6FIWKzSRhuqVi7ce3+DMTlIyBjmVAEzioDE2UsszuQItFu+ZWL3jqjjXCKZiQbURXYMN/ZLjuw3IyDnQbHjG7A98+Rxg6nYL5tYAax02cY7p7mbQzvqTL2kshh949l+cBVe2X88hwzYFGfZfy9qm/NQwhlqVk6ljpu+9gwlcx1hez5k885xzNPLt2kB5t73SsIvBStnEBA8XTn95Jtncv0ydL2p8q+X4D2NnEF2Nno6C/GvXc4bUdOw+zGaf/w53//TgPhsX6X+q+v5WcUSGaAAAAABJRU5ErkJggg==" alt="Loading">
+                    <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Simplicity</h1>
+                    <p class="text-center text-gray-300 pt-3 text-lg"> We believe that technology should be easy to use and understandable.
+                        <br>We always create super easy products.
+                    </p>
+                </div>
+                <div class="flex flex-col flex-auto justify-start items-center w-full h-auto py-20 px-10 bg-gray-800 rounded-2xl shadow-sm transition-all duration-500 hover:shadow-sky-400 shadow-purple-700 ">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAtFBMVEVHcEz39/f39/f5+fn29vb19fX////39/f29vb29vb39/f4+Pj29vb09PT4+Pj29vb39/fv7+/29vb39/f19fX39/f29vb39/f19fX39/f39/f4+Pj29vb4+Pj29vb29vYBAQH39/c/Pz8gICB8fHybm5sRERHZ2dltbW26uroQEBDJycno6OjY2NhOTk5eXl6MjIwwMDCLi4tdXV0vLy+qqqqrq6vn5+dsbGxPT0/KysrIyMj/p6vqAAAAIHRSTlMAYEAwkHAQIN/v77+/MJ/PoBCfz6CQsK9QgI9wj2/Qf9MYSmsAAASjSURBVHhevZpZd+I4EIUNwdgOZOtMtunpntLudWFL0j3//38NThFsc7AQjtX3weckD3y5dUslCccx1fTZnTzd+wHZKvDn84k7njpDynOvfXJE/tPoYhjCeOITjfxv468Spv/ekJPyR94XEFeTgJjpW1+MN0eARcz0bwTYxPzoKJQ+G4uVqjX37NpAXbqW0mjrH7NS/SRfku8ZMHxCbFOuAvJlXV7YZyBFz7BN8ZAxBMUzydxa+j4ZUPfH903NGhxsVf4gA8vVhW4x/DkZXPNDxohYkGuve2tdtjvsL2OAyKno12GeMYMDW0BhTPH6GFGwIiSEqEf2JkaSjdo+o+rzMzAv2MUZRlIKAOEWBZwQYe6ETM4wEgJPeGWAQr6SrEeDGayRRb57pGEs39+IuV7Mpy+rIJQSfH4o4qUygNwgY2zUucssBNGAFADAEgPKuI7dJPiC1BABnGSMGkfvG67CDWlAwnj7KCE9DfErxgUxkoCsDUmrkpmu+lEvSAZMcFiZzuJHU0ihGhDyygBCo16+PuP4wGPgOwgKfzQK5Y6YKlsBi3pAyBRXiaEEg0KdD3l2XHKOODCJkIhCabwLT3QAxTDtVs0qSBoC2+xXarhW+uU400HWEpg4nJVbiJCNzooYxGvdqnzUQkLYZAwOzFD6mwJNahuwTgSE2hnp65YGxxhECxKDXO6RGwmcnNiRfSfohjDcnA7M5I1Kpb92nlLdrLx0dEZE3VOc8zJBZvQRtghzmkv49BTprGgglBGUKiRUquumuAS5oIvGr2LaB6I+/8oS5Hv0RkgiKGKiAuTqw8+bYJCrndu0B0TAf7ta5XW3UmAlBcnrybgEllaQRHNO6g4+jHcM3l7yiKiVAGYeh93B+52RLPZHxlqVE0TUWqIHtupu4ZsuCA7CnGVNd7Ds7BBKu8+qj1qIahULbbWF7auHdA/IFcP0W4FkxyAphNpyTbpHfQkppo/SlZ3lFWnZPeqfuyARCLSzFx60U8E3R+Iru5f8uHv7TRnwNoQtcLADMHUI4bDWbL+aMRxCXsQHsywEFpHXuE2Ji18Qak93t7rNFiBqdqqiOIKTFiUBgKVuz3K0m3zCIGxkJKQUCGxRispdt0anrkAZixVBFXEINMO4WhQF6+zkjc7XUdL99h3va/IabxoUxVh28sCtP6+QV8iRIvLoE7wAsaUgXjGZ6E+pJpegZavim82eEsE6SbmUkcklqHNG1kce3tjhBVKWVTsDYEzaaqFedIh6+KoETewo6zWwskQb2t5C3QWnKMXHiKlNRHkqaM7fDK9Ap6PHqOOkYQKg2VAGsZvd6FIWKzSRhuqVi7ce3+DMTlIyBjmVAEzioDE2UsszuQItFu+ZWL3jqjjXCKZiQbURXYMN/ZLjuw3IyDnQbHjG7A98+Rxg6nYL5tYAax02cY7p7mbQzvqTL2kshh949l+cBVe2X88hwzYFGfZfy9qm/NQwhlqVk6ljpu+9gwlcx1hez5k885xzNPLt2kB5t73SsIvBStnEBA8XTn95Jtncv0ydL2p8q+X4D2NnEF2Nno6C/GvXc4bUdOw+zGaf/w53//TgPhsX6X+q+v5WcUSGaAAAAABJRU5ErkJggg==" alt="Loading">
+                    <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Quality</h1>
+                    <p class="text-center text-gray-300 pt-3 text-lg"> We pay close attention to every detail and ensure that every aspect of our products is of the highest quality.</p>
+                </div>
+                <div class="flex flex-col flex-auto justify-start items-center w-full h-auto py-20 px-10 bg-gray-800 rounded-2xl shadow-sm transition-all duration-500 hover:shadow-sky-400 shadow-purple-700 ">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAtFBMVEVHcEz39/f39/f5+fn29vb19fX////39/f29vb29vb39/f4+Pj29vb09PT4+Pj29vb39/fv7+/29vb39/f19fX39/f29vb39/f19fX39/f39/f4+Pj29vb4+Pj29vb29vYBAQH39/c/Pz8gICB8fHybm5sRERHZ2dltbW26uroQEBDJycno6OjY2NhOTk5eXl6MjIwwMDCLi4tdXV0vLy+qqqqrq6vn5+dsbGxPT0/KysrIyMj/p6vqAAAAIHRSTlMAYEAwkHAQIN/v77+/MJ/PoBCfz6CQsK9QgI9wj2/Qf9MYSmsAAASjSURBVHhevZpZd+I4EIUNwdgOZOtMtunpntLudWFL0j3//38NThFsc7AQjtX3weckD3y5dUslCccx1fTZnTzd+wHZKvDn84k7njpDynOvfXJE/tPoYhjCeOITjfxv468Spv/ekJPyR94XEFeTgJjpW1+MN0eARcz0bwTYxPzoKJQ+G4uVqjX37NpAXbqW0mjrH7NS/SRfku8ZMHxCbFOuAvJlXV7YZyBFz7BN8ZAxBMUzydxa+j4ZUPfH903NGhxsVf4gA8vVhW4x/DkZXPNDxohYkGuve2tdtjvsL2OAyKno12GeMYMDW0BhTPH6GFGwIiSEqEf2JkaSjdo+o+rzMzAv2MUZRlIKAOEWBZwQYe6ETM4wEgJPeGWAQr6SrEeDGayRRb57pGEs39+IuV7Mpy+rIJQSfH4o4qUygNwgY2zUucssBNGAFADAEgPKuI7dJPiC1BABnGSMGkfvG67CDWlAwnj7KCE9DfErxgUxkoCsDUmrkpmu+lEvSAZMcFiZzuJHU0ihGhDyygBCo16+PuP4wGPgOwgKfzQK5Y6YKlsBi3pAyBRXiaEEg0KdD3l2XHKOODCJkIhCabwLT3QAxTDtVs0qSBoC2+xXarhW+uU400HWEpg4nJVbiJCNzooYxGvdqnzUQkLYZAwOzFD6mwJNahuwTgSE2hnp65YGxxhECxKDXO6RGwmcnNiRfSfohjDcnA7M5I1Kpb92nlLdrLx0dEZE3VOc8zJBZvQRtghzmkv49BTprGgglBGUKiRUquumuAS5oIvGr2LaB6I+/8oS5Hv0RkgiKGKiAuTqw8+bYJCrndu0B0TAf7ta5XW3UmAlBcnrybgEllaQRHNO6g4+jHcM3l7yiKiVAGYeh93B+52RLPZHxlqVE0TUWqIHtupu4ZsuCA7CnGVNd7Ds7BBKu8+qj1qIahULbbWF7auHdA/IFcP0W4FkxyAphNpyTbpHfQkppo/SlZ3lFWnZPeqfuyARCLSzFx60U8E3R+Iru5f8uHv7TRnwNoQtcLADMHUI4bDWbL+aMRxCXsQHsywEFpHXuE2Ji18Qak93t7rNFiBqdqqiOIKTFiUBgKVuz3K0m3zCIGxkJKQUCGxRispdt0anrkAZixVBFXEINMO4WhQF6+zkjc7XUdL99h3va/IabxoUxVh28sCtP6+QV8iRIvLoE7wAsaUgXjGZ6E+pJpegZavim82eEsE6SbmUkcklqHNG1kce3tjhBVKWVTsDYEzaaqFedIh6+KoETewo6zWwskQb2t5C3QWnKMXHiKlNRHkqaM7fDK9Ap6PHqOOkYQKg2VAGsZvd6FIWKzSRhuqVi7ce3+DMTlIyBjmVAEzioDE2UsszuQItFu+ZWL3jqjjXCKZiQbURXYMN/ZLjuw3IyDnQbHjG7A98+Rxg6nYL5tYAax02cY7p7mbQzvqTL2kshh949l+cBVe2X88hwzYFGfZfy9qm/NQwhlqVk6ljpu+9gwlcx1hez5k885xzNPLt2kB5t73SsIvBStnEBA8XTn95Jtncv0ydL2p8q+X4D2NnEF2Nno6C/GvXc4bUdOw+zGaf/w53//TgPhsX6X+q+v5WcUSGaAAAAABJRU5ErkJggg==" alt="Loading">
+                    <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Passion</h1>
+                    <p class="text-center text-gray-300 pt-3 text-lg"> We are passionate about technology and gaming and pour our hearts into every project we take on.</p>
+                </div>
+                <div class="flex flex-col flex-auto justify-start items-center w-full h-auto py-20 px-10 bg-gray-800 rounded-2xl shadow-sm transition-all duration-500 hover:shadow-sky-400 shadow-purple-700 ">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAtFBMVEVHcEz39/f39/f5+fn29vb19fX////39/f29vb29vb39/f4+Pj29vb09PT4+Pj29vb39/fv7+/29vb39/f19fX39/f29vb39/f19fX39/f39/f4+Pj29vb4+Pj29vb29vYBAQH39/c/Pz8gICB8fHybm5sRERHZ2dltbW26uroQEBDJycno6OjY2NhOTk5eXl6MjIwwMDCLi4tdXV0vLy+qqqqrq6vn5+dsbGxPT0/KysrIyMj/p6vqAAAAIHRSTlMAYEAwkHAQIN/v77+/MJ/PoBCfz6CQsK9QgI9wj2/Qf9MYSmsAAASjSURBVHhevZpZd+I4EIUNwdgOZOtMtunpntLudWFL0j3//38NThFsc7AQjtX3weckD3y5dUslCccx1fTZnTzd+wHZKvDn84k7njpDynOvfXJE/tPoYhjCeOITjfxv468Spv/ekJPyR94XEFeTgJjpW1+MN0eARcz0bwTYxPzoKJQ+G4uVqjX37NpAXbqW0mjrH7NS/SRfku8ZMHxCbFOuAvJlXV7YZyBFz7BN8ZAxBMUzydxa+j4ZUPfH903NGhxsVf4gA8vVhW4x/DkZXPNDxohYkGuve2tdtjvsL2OAyKno12GeMYMDW0BhTPH6GFGwIiSEqEf2JkaSjdo+o+rzMzAv2MUZRlIKAOEWBZwQYe6ETM4wEgJPeGWAQr6SrEeDGayRRb57pGEs39+IuV7Mpy+rIJQSfH4o4qUygNwgY2zUucssBNGAFADAEgPKuI7dJPiC1BABnGSMGkfvG67CDWlAwnj7KCE9DfErxgUxkoCsDUmrkpmu+lEvSAZMcFiZzuJHU0ihGhDyygBCo16+PuP4wGPgOwgKfzQK5Y6YKlsBi3pAyBRXiaEEg0KdD3l2XHKOODCJkIhCabwLT3QAxTDtVs0qSBoC2+xXarhW+uU400HWEpg4nJVbiJCNzooYxGvdqnzUQkLYZAwOzFD6mwJNahuwTgSE2hnp65YGxxhECxKDXO6RGwmcnNiRfSfohjDcnA7M5I1Kpb92nlLdrLx0dEZE3VOc8zJBZvQRtghzmkv49BTprGgglBGUKiRUquumuAS5oIvGr2LaB6I+/8oS5Hv0RkgiKGKiAuTqw8+bYJCrndu0B0TAf7ta5XW3UmAlBcnrybgEllaQRHNO6g4+jHcM3l7yiKiVAGYeh93B+52RLPZHxlqVE0TUWqIHtupu4ZsuCA7CnGVNd7Ds7BBKu8+qj1qIahULbbWF7auHdA/IFcP0W4FkxyAphNpyTbpHfQkppo/SlZ3lFWnZPeqfuyARCLSzFx60U8E3R+Iru5f8uHv7TRnwNoQtcLADMHUI4bDWbL+aMRxCXsQHsywEFpHXuE2Ji18Qak93t7rNFiBqdqqiOIKTFiUBgKVuz3K0m3zCIGxkJKQUCGxRispdt0anrkAZixVBFXEINMO4WhQF6+zkjc7XUdL99h3va/IabxoUxVh28sCtP6+QV8iRIvLoE7wAsaUgXjGZ6E+pJpegZavim82eEsE6SbmUkcklqHNG1kce3tjhBVKWVTsDYEzaaqFedIh6+KoETewo6zWwskQb2t5C3QWnKMXHiKlNRHkqaM7fDK9Ap6PHqOOkYQKg2VAGsZvd6FIWKzSRhuqVi7ce3+DMTlIyBjmVAEzioDE2UsszuQItFu+ZWL3jqjjXCKZiQbURXYMN/ZLjuw3IyDnQbHjG7A98+Rxg6nYL5tYAax02cY7p7mbQzvqTL2kshh949l+cBVe2X88hwzYFGfZfy9qm/NQwhlqVk6ljpu+9gwlcx1hez5k885xzNPLt2kB5t73SsIvBStnEBA8XTn95Jtncv0ydL2p8q+X4D2NnEF2Nno6C/GvXc4bUdOw+zGaf/w53//TgPhsX6X+q+v5WcUSGaAAAAABJRU5ErkJggg==" alt="Loading">
+                    <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Innovation</h1>
+                    <p class="text-center text-gray-300 pt-3 text-lg"> We are constantly seeking new and creative solutions to problems and set high standards for products.</p>
+                </div>
+                <div class="flex flex-col flex-auto justify-start items-center w-full h-auto py-20 px-10 bg-gray-800 rounded-2xl shadow-sm transition-all duration-500 hover:shadow-sky-400 shadow-purple-700 ">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAtFBMVEVHcEz39/f39/f5+fn29vb19fX////39/f29vb29vb39/f4+Pj29vb09PT4+Pj29vb39/fv7+/29vb39/f19fX39/f29vb39/f19fX39/f39/f4+Pj29vb4+Pj29vb29vYBAQH39/c/Pz8gICB8fHybm5sRERHZ2dltbW26uroQEBDJycno6OjY2NhOTk5eXl6MjIwwMDCLi4tdXV0vLy+qqqqrq6vn5+dsbGxPT0/KysrIyMj/p6vqAAAAIHRSTlMAYEAwkHAQIN/v77+/MJ/PoBCfz6CQsK9QgI9wj2/Qf9MYSmsAAASjSURBVHhevZpZd+I4EIUNwdgOZOtMtunpntLudWFL0j3//38NThFsc7AQjtX3weckD3y5dUslCccx1fTZnTzd+wHZKvDn84k7njpDynOvfXJE/tPoYhjCeOITjfxv468Spv/ekJPyR94XEFeTgJjpW1+MN0eARcz0bwTYxPzoKJQ+G4uVqjX37NpAXbqW0mjrH7NS/SRfku8ZMHxCbFOuAvJlXV7YZyBFz7BN8ZAxBMUzydxa+j4ZUPfH903NGhxsVf4gA8vVhW4x/DkZXPNDxohYkGuve2tdtjvsL2OAyKno12GeMYMDW0BhTPH6GFGwIiSEqEf2JkaSjdo+o+rzMzAv2MUZRlIKAOEWBZwQYe6ETM4wEgJPeGWAQr6SrEeDGayRRb57pGEs39+IuV7Mpy+rIJQSfH4o4qUygNwgY2zUucssBNGAFADAEgPKuI7dJPiC1BABnGSMGkfvG67CDWlAwnj7KCE9DfErxgUxkoCsDUmrkpmu+lEvSAZMcFiZzuJHU0ihGhDyygBCo16+PuP4wGPgOwgKfzQK5Y6YKlsBi3pAyBRXiaEEg0KdD3l2XHKOODCJkIhCabwLT3QAxTDtVs0qSBoC2+xXarhW+uU400HWEpg4nJVbiJCNzooYxGvdqnzUQkLYZAwOzFD6mwJNahuwTgSE2hnp65YGxxhECxKDXO6RGwmcnNiRfSfohjDcnA7M5I1Kpb92nlLdrLx0dEZE3VOc8zJBZvQRtghzmkv49BTprGgglBGUKiRUquumuAS5oIvGr2LaB6I+/8oS5Hv0RkgiKGKiAuTqw8+bYJCrndu0B0TAf7ta5XW3UmAlBcnrybgEllaQRHNO6g4+jHcM3l7yiKiVAGYeh93B+52RLPZHxlqVE0TUWqIHtupu4ZsuCA7CnGVNd7Ds7BBKu8+qj1qIahULbbWF7auHdA/IFcP0W4FkxyAphNpyTbpHfQkppo/SlZ3lFWnZPeqfuyARCLSzFx60U8E3R+Iru5f8uHv7TRnwNoQtcLADMHUI4bDWbL+aMRxCXsQHsywEFpHXuE2Ji18Qak93t7rNFiBqdqqiOIKTFiUBgKVuz3K0m3zCIGxkJKQUCGxRispdt0anrkAZixVBFXEINMO4WhQF6+zkjc7XUdL99h3va/IabxoUxVh28sCtP6+QV8iRIvLoE7wAsaUgXjGZ6E+pJpegZavim82eEsE6SbmUkcklqHNG1kce3tjhBVKWVTsDYEzaaqFedIh6+KoETewo6zWwskQb2t5C3QWnKMXHiKlNRHkqaM7fDK9Ap6PHqOOkYQKg2VAGsZvd6FIWKzSRhuqVi7ce3+DMTlIyBjmVAEzioDE2UsszuQItFu+ZWL3jqjjXCKZiQbURXYMN/ZLjuw3IyDnQbHjG7A98+Rxg6nYL5tYAax02cY7p7mbQzvqTL2kshh949l+cBVe2X88hwzYFGfZfy9qm/NQwhlqVk6ljpu+9gwlcx1hez5k885xzNPLt2kB5t73SsIvBStnEBA8XTn95Jtncv0ydL2p8q+X4D2NnEF2Nno6C/GvXc4bUdOw+zGaf/w53//TgPhsX6X+q+v5WcUSGaAAAAABJRU5ErkJggg==" alt="Loading">
+                    <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Fun</h1>
+                    <p class="text-center text-gray-300 pt-3 text-lg"> We believe that technology and gaming can be both functional and fun, and we create products that are both usable and enjoyable.</p>
+                </div>
+                <div class="flex flex-col flex-auto justify-start items-center w-full h-auto py-20 px-10 bg-gray-800 rounded-2xl shadow-sm transition-all duration-500 hover:shadow-sky-400 shadow-purple-700 ">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAtFBMVEVHcEz39/f39/f5+fn29vb19fX////39/f29vb29vb39/f4+Pj29vb09PT4+Pj29vb39/fv7+/29vb39/f19fX39/f29vb39/f19fX39/f39/f4+Pj29vb4+Pj29vb29vYBAQH39/c/Pz8gICB8fHybm5sRERHZ2dltbW26uroQEBDJycno6OjY2NhOTk5eXl6MjIwwMDCLi4tdXV0vLy+qqqqrq6vn5+dsbGxPT0/KysrIyMj/p6vqAAAAIHRSTlMAYEAwkHAQIN/v77+/MJ/PoBCfz6CQsK9QgI9wj2/Qf9MYSmsAAASjSURBVHhevZpZd+I4EIUNwdgOZOtMtunpntLudWFL0j3//38NThFsc7AQjtX3weckD3y5dUslCccx1fTZnTzd+wHZKvDn84k7njpDynOvfXJE/tPoYhjCeOITjfxv468Spv/ekJPyR94XEFeTgJjpW1+MN0eARcz0bwTYxPzoKJQ+G4uVqjX37NpAXbqW0mjrH7NS/SRfku8ZMHxCbFOuAvJlXV7YZyBFz7BN8ZAxBMUzydxa+j4ZUPfH903NGhxsVf4gA8vVhW4x/DkZXPNDxohYkGuve2tdtjvsL2OAyKno12GeMYMDW0BhTPH6GFGwIiSEqEf2JkaSjdo+o+rzMzAv2MUZRlIKAOEWBZwQYe6ETM4wEgJPeGWAQr6SrEeDGayRRb57pGEs39+IuV7Mpy+rIJQSfH4o4qUygNwgY2zUucssBNGAFADAEgPKuI7dJPiC1BABnGSMGkfvG67CDWlAwnj7KCE9DfErxgUxkoCsDUmrkpmu+lEvSAZMcFiZzuJHU0ihGhDyygBCo16+PuP4wGPgOwgKfzQK5Y6YKlsBi3pAyBRXiaEEg0KdD3l2XHKOODCJkIhCabwLT3QAxTDtVs0qSBoC2+xXarhW+uU400HWEpg4nJVbiJCNzooYxGvdqnzUQkLYZAwOzFD6mwJNahuwTgSE2hnp65YGxxhECxKDXO6RGwmcnNiRfSfohjDcnA7M5I1Kpb92nlLdrLx0dEZE3VOc8zJBZvQRtghzmkv49BTprGgglBGUKiRUquumuAS5oIvGr2LaB6I+/8oS5Hv0RkgiKGKiAuTqw8+bYJCrndu0B0TAf7ta5XW3UmAlBcnrybgEllaQRHNO6g4+jHcM3l7yiKiVAGYeh93B+52RLPZHxlqVE0TUWqIHtupu4ZsuCA7CnGVNd7Ds7BBKu8+qj1qIahULbbWF7auHdA/IFcP0W4FkxyAphNpyTbpHfQkppo/SlZ3lFWnZPeqfuyARCLSzFx60U8E3R+Iru5f8uHv7TRnwNoQtcLADMHUI4bDWbL+aMRxCXsQHsywEFpHXuE2Ji18Qak93t7rNFiBqdqqiOIKTFiUBgKVuz3K0m3zCIGxkJKQUCGxRispdt0anrkAZixVBFXEINMO4WhQF6+zkjc7XUdL99h3va/IabxoUxVh28sCtP6+QV8iRIvLoE7wAsaUgXjGZ6E+pJpegZavim82eEsE6SbmUkcklqHNG1kce3tjhBVKWVTsDYEzaaqFedIh6+KoETewo6zWwskQb2t5C3QWnKMXHiKlNRHkqaM7fDK9Ap6PHqOOkYQKg2VAGsZvd6FIWKzSRhuqVi7ce3+DMTlIyBjmVAEzioDE2UsszuQItFu+ZWL3jqjjXCKZiQbURXYMN/ZLjuw3IyDnQbHjG7A98+Rxg6nYL5tYAax02cY7p7mbQzvqTL2kshh949l+cBVe2X88hwzYFGfZfy9qm/NQwhlqVk6ljpu+9gwlcx1hez5k885xzNPLt2kB5t73SsIvBStnEBA8XTn95Jtncv0ydL2p8q+X4D2NnEF2Nno6C/GvXc4bUdOw+zGaf/w53//TgPhsX6X+q+v5WcUSGaAAAAABJRU5ErkJggg==" alt="Loading">
+                    <h1 class="text-blue-400 font-thin text-4xl text-center pt-3">Our People</h1>
+                    <p class="text-center text-gray-300 pt-3 text-lg"> We support the personal and professional growth of our people and develop their skills and advance their careers.</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-white text-4xl md:text-6xl text-center md:text-left  px-10 md:px-24">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-600 to-pink-400">We Are</span>
+             Pralee </h2>
+             <div class="py-20">
+                <div class="flex items-center justify-center md:mx-24 shadow-2xl md:border-4"><video src="pralee.e09ceccc497bbb98c52e.mp4" autoplay="" loop="" class="h-3/4"></video>
+            </div>
+        </div>
+        <div style="background-image: url(&quot;/static/media/team.9edc77f7ba51a814751d.jpg&quot;); background-attachment: fixed; background-size: cover; background-position: center bottom;">
+            <div class="h-max w-full bg-gray-900 px-10 md:px-24 py-20 bg-opacity-90">
+                <h2 class="text-transparent bg-clip-textbg-gradient-to-r from-blue-500 via-purple-600 to-pink-400 text-4xl md:text-6xl text-center md:text-center px-10 md:px-24">Our Team Is Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-600 to-pink-400">Power</span>
+                 </h2>
+                 <div class="w-full flex flex-col md:flex-row items-center justify-start lg:px-28 xl:px-36 mt-10">
+                    <div class=" md:w-3/5 border-gray-700 bg-gray-800 hover:bg-gray-700 border rounded-lg shadow-lg">
+                    <div class="p-4">
+                        <p class="text-white text-xl">We believe that our team's talent and expertise are what sets us apart and drive our success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col md:flex-row items-center justify-end lg:px-28 xl:px-36 mt-10">
+                <div class=" md:w-3/5 border-gray-700 bg-gray-800 hover:bg-gray-700 border rounded-lg shadow-lg">
+                    <div class="p-4">
+                        <p class="text-white text-xl">We empower our team members to take ownership of their work and make decisions that drive our success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col md:flex-row items-center justify-start lg:px-28 xl:px-36 mt-10">
+                <div class=" md:w-3/5 border-gray-700 bg-gray-800 hover:bg-gray-700 border rounded-lg shadow-lg">
+                    <div class="p-4">
+                        <p class="text-white text-xl">We trust our team members to do their best work and support them in achieving their goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex flex-col md:flex-row items-center justify-end lg:px-28 xl:px-36 mt-10"><div class=" md:w-3/5 border-gray-700 bg-gray-800 hover:bg-gray-700 border rounded-lg shadow-lg">
+                <div class="p-4">
+                    <p class="text-white text-xl">We invest in our team's skills and expertise, providing opportunities for them to grow and develop professionally.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flex flex-col items-center justify-center h-full py-40 px-5 bg-gradient-to-br from-purple-800 via-blue-700 to-sky-600">
+    <h1 class="text-white text-4xl text-center">No matter what's your industry 
+        <br>We can help you to achieve your goals</h1>
+        <h1 class="text-white text-xl text-center pt-10 pb-10">We offer customization options that allow us to create solutions that are tailored to each customer's specific needs.</h1>
+        <span class="text-white">
+            <a class="border-2 rounded-lg  p-4 mr-4 hover:bg-gray-800 transition-all ease-in-out duration-500" href="/services">Explore Services</a>
+            <a class="border-2 rounded-lg p-4 hover:bg-gray-800 transition-all ease-in-out duration-150" href="/contactus">Get in touch</a>
+        </span>
+    </div>
+</div>
+</div>
+<div class="container flex flex-wrap items-center justify-between mx-auto w-full">
+    <span class="w-10">
+
+    </span>
+    <h1 class="sr-only">Pralee Technology</h1>
+    <a href="https://praleetechnology.com/" class="flex items-center">
+        <img src="praleelogo.e23e100b2f5b964a2809.png" class="h-11" alt="pralee logo">
+    </a>
+    <div class="flex intems-center justify-end transition-all duration-300">
+        <button type="button" class="inline-flex items-center p-2 text-sm rounded-lg text-gray-400 hover:bg-gray-700" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z"></path>
+                </g>
+            </svg>
+        </button>
+    </div>
+        </div>
+        <div class="flex md:flex-row flex-col px-10 pt-10 sm:px-24 sm:pt-24 pb-10"><div class="flex-auto w-full md:w-1/4 sm:pr-10 sm:mr-10"><a href="https://praleetechnology.com/" class="flex justify-center sm:justify-start"><img src="/static/media/praleelogo.e23e100b2f5b964a2809.png" class="h-11" alt="pralee logo"></a><p class="pt-6 text-gray-400">Pralee is a leading software and gaming company dedicated to providing innovative, easy and fun products.</p></div><div class="flex flex-grow flex-row"><div class="flex-auto pt-10 md:pt-0">
+            <h1 class="text-xl"> Discover </h1>
+            <ul class="text-gray-400 pt-10">
+                <li class="pb-4 hover:text-white">
+                <a href="/services"> Services</a></li>
+                <li class="pb-4 hover:text-white">
+                    <a href="/gaming"> Gaming</a></li>
+                </ul>
+            </div>
+            <div class="flex-auto pt-10 md:pt-0">
+                <h1 class="text-xl ">About</h1>
+                <ul class="text-gray-400 pt-10">
+                    <li class="pb-4 hover:text-white">
+                        <a href="/contactus"> Contact Us</a></li>
+                        <li class="pb-4 hover:text-white">
+                            <a href="/credits"> Credits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex-auto pt-10 md:pt-0">
+                    <h1 class="text-xl">Follow Us</h1>
+                    <div class="flex flex-row md:flex-col pt-4 md:pt-8">
+                        <div class="flex items-center p-2">
+                            <div class="w-5 h-5"
+                            ><img src="linkedin.f249b38224ca41a0b909.png" alt="loading"></div>
+                            <a href="https://www.linkedin.com/company/praleetechnology/" target="_blank" rel="noreferrer" class="flex items-center text-gray-400 hover:text-white">
+                                <h1 class="pl-2"><span class="hidden md:inline">LinkedIn</span></h1>
+                                </a>
+                            </div>
+                            <div class="p-2">
+                                <a href="https://www.youtube.com/@praleetechnology" target="_blank" rel="noreferrer" class="flex items-center text-gray-400 hover:text-white">
+                                    <div class="w-5 h-5"><img src="youtube.c44b760651bd9c1f6f6b.png" alt="loading"></div>
+                                    <h1 class="pl-2"><span class="hidden md:inline">Youtube</span></h1></a>
+                                </div>
+                                <div class="p-2"><a href="https://github.com/praleetechnology" target="_blank" rel="noreferrer" class="flex items-center text-gray-400 hover:text-white">
+                                    <div class="w-5 h-5"><img src="download.png" alt="loading"></div>
+                                </div>
+                                <h1 class="pl-2"><span class="hidden md:inline">GitHub</span>
+                                </h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+            <div class="text-white pt-10 text-sm text-gray-400 text-center p-5">
+                © 2023 Pralee Technology • All Rights Reserved
+            </div>
+        
+        </body>
+        <script>
+            const toggleButton = document.getElementById('toggleSidebar');
+            const sidebar = document.getElementById('sidebar');
+        
+            toggleButton.addEventListener('click', () => {
+                sidebar.classList.toggle('hidden');
+            });
+        </script>
+        
+        </html>
+        
